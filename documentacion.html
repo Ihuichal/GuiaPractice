@@ -70,7 +70,7 @@
             </div>
           </div>
 
-        </br>
+        </br>   <!--Semana 2-->
 
         <div class="card blue-grey darken-1">
           <div class="card-content black-text">
@@ -114,7 +114,7 @@
 
         </div>
 
-      </br>
+      </br>  <!--Semana 3-->
 
       <div class="card blue-grey darken-1">
         <div class="card-content black-text">
@@ -129,7 +129,82 @@
             </div>
           </div>
 
+      </br>  <!--Semana 4-->
 
+      <div class="card blue-grey darken-1">
+        <div class="card-content black-text">
+          <span class="card-title" style="font-size: 40px;"><b>Semana 4<b></span></br>
+            <p style="color:white;" >
+                Amazon nos proporciona una gran cantidad de servicios, los que utilizamos
+                 para efectos del primer sprint de desarrollo son solo 2, (Lambda, y Api GateWay) y
+                 se propone agregar el uso de DynamoDB para los próximos Sprint. </br>
+                 Funciones en Lambda: </br>
+                Una función es un código con entradas que será ejecutado por Amazon y que pueden efectuar
+                una acción que puede interactuar con otros recursos de amazon, estas funciones pueden ser escritas
+                 en varios lenguajes por ejemplo Java, C, Python, NodeJs, nosotros elegimos usar NodeJs para
+                 conservar el modelo que teníamos como backend que teniamos en Express js. </br>
+                 Ejemplo de función con Lambda: </br>
+                 Para crear una función de Lambda, se hace de la siguiente forma:</br>
+                 Dentro de AWS selecciona el servicio de Lambda, y selecciona
+                 la opción de crear una nueva función. </br>
+               </p>
+
+                </br> <img class="centrado" src="images/s41.png" ></br>
+
+              <p style="color:white;">
+                Ahora hay que completar los siguientes campos nombre de la funcion,
+                descripcion, runtime y role. </br>
+              </p>
+
+            </br> <img class="centrado" src="images/s42.png" ></br>
+
+            <p style="color:white;">
+              Nombre: Debes poner un nombre para identificar tu función. </br>
+              Descripción: Permite poner una descripción de la función. </br>
+              Runtime: Corresponde al intérprete en el cual  correrá el código, puede ser Java,
+              Python, Script. </br>
+              Role: Los roles en amazon definen los permisos que nuestra funcion tendra con
+              otros recursos y servicios de Amazon. ver IAM de amazon para gestionar roles.</br></br>
+
+              Completado los recursos ahora ya tienes una funcion hecha en Lambda, nosotros escogimos
+               usar NodeJs para codificar nuestras funciones, Los recursos a los cuales nuestras
+               funciones podrán acceder las dará el role que se le asigne a la función. mientras que
+               los triggers se pueden configurar desde la función. para efectos de nuestro primer sprint,
+               hicimos una función que retorna  un atributo de la llegada.</br>
+            </p>
+
+          </br> <img class="centrado" src="images/s43.png" ></br>
+          <p style="color:white;">
+              Las entradas de una función de Lambda son estructuras del tipo Json por como el siguiente:</br>
+            </br> <img class="centrado" src="images/s44.png" ></br>
+
+            Estas  pueden provenir del API Gateway si lo configuras como Trigger
+            de lanzamiento para la función, aunque igual puede ser ejecutado por
+            varios otros servicios de amazon.</br>
+            En nuestro caso lo configuramos pensando en recibir una
+             llamada proveniente de API Gateway. </br>
+           </br> <img class="centrado" src="images/s45.png" ></br>
+
+           API Gateway es un servicio que facilita la comunicación de los demás servicios
+            de amazon proporciona sistemas de Rooteos y sistemas de autentificación que le
+            pondremos el foco en la siguiente sprint. pero lo dejamos configurado para que
+            reciba las peticiones HTTPs  provenientes de nuestra aplicacion y las comunique con
+            el microservicios de lamda.</br>
+          </br> <img class="centrado" src="images/s46.png" ></br>
+
+
+
+          </p>
+
+
+
+             </br>
+              <div class="card-action">
+                <a href=""></a>
+                <a href=""></a>
+              </div>
+            </div>
+          </div>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
