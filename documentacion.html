@@ -120,11 +120,73 @@
         <div class="card-content black-text">
           <span class="card-title" style="font-size: 40px;"><b>Semana 3<b></span></br>
             <p style="color:white;" >
+              Se inició el desarrollo de la aplicación móvil para Android,
+               haciendo uso de git para desarrollar el proyecto en módulos,
+               entre las tareas más destacadas podemos diferenciar las siguientes: </br>
+               &#9702; Módulo para obtener la Geoposición.</br>
+               &#9702; Método para obtener id “Mac”.</br>
+               &#9702; Módulo de comunicación Https.</br>
+               &#9702; Vista de la aplicación.</br>
+               Estructura de la aplicación: </br>
+              El framework de android separa el proyecto en directorios </br>
+            </br> <img class="centrado" src="images/s31.png" ></br>
+            APP: se separa en tres sub directorios: </br>
+               &#9702; Manifests:Contiene el archivo que con los permisos y configuraciones
+              iniciales de la Aplicación.</br>
+               &#9702; Java:Contiene los archivos con las clases en java donde se programan
+              las lógicas de la aplicación.</br>
+               &#9702; Res: Contiene los archivos de las vistas, para el diseño de
+              vistas de la app, los archivos de aca son de lenguaje de etiquetas xml donde
+              se pueden definir  recursos de widget como botones, labels, formularios, etc.</br>
+
+              &#8211; Método para obtener  la posición</br>
+                Para este método se usaron las librerías que proporciona android para detectar
+                la posición del celular mediante GPS, Location Manager  es una clase que nos permite
+                capturar esta información, además de otras clases para almacenar las instancias como
+                Location() y location Listener.</br>
+
+                &#8211; Método para obtener la mac del dispositivo :</br>
+                MacDevice.java es una clase que se ejecuta en el dispositivo y
+                 retorna un string con la mac. </br>
+
+                 &#8211; Comunicación HTTPS</br>
+
+                 Para ejecutar peticiones HTTPS tuvimos que crear clases que
+                  extienden de la Clase AsincronycTasck(), para mantener la comunicación
+                  en otro hilo de ejecución, además de importar la librería HttpsUrlConnection()
+                  que sostiene los métodos para formar las peticiones Response y brinda de un mecanismo
+                   para tratar los Response.</br>
+
+                   &#8211; Cambio de repositorio </br>
+
+                    Para seguir con el  alineamiento estratégico de la empresa
+                     decidimos cambiar de servidor de repositorio  de GitHub a Bitbucket
+                     puesto que este último es una Herramienta de Atlassians y pensamos que nos
+                      podría dar sinergia con Jira.</br>
+
+                        &#8211; Vista de la aplicación </br>
+
+                    En el directorio res  se encuentran los Layouts que describen
+                    tanto en forma gráfica como lenguaje xml los componentes de las vistas </br>
+
+                  </br> <img class="centrado" src="images/s32.png" ></br>
+                  &#8211; Servidor local </br>
+
+                  Para hacer pruebas de comunicación  levantamos un servicio de
+                  Api local con Node Js utilizando el Framework de Express conectado
+                   con una base de datos mongodb.  </br>
+
+
+
+
+
+
 
             </p></br>
               <div class="card-action">
-                <a href=""></a>
-                <a href=""></a>
+                <a href="https://aws.amazon.com/es/training/?nc2=h_l2_tr">Capacitación</a>
+                <a href="https://docs.aws.amazon.com/es_es/apigateway/latest/developerguide/welcome.html">API Gateway</a>
+
               </div>
             </div>
           </div>
