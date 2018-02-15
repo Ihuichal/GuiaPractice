@@ -18,6 +18,10 @@ p {
 .button-collapse {
   color: #26a69a;
 }
+.documentation{
+  width: 100%;
+}
+
 
 .parallax-container {
   min-height: 380px;

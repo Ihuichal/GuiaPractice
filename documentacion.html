@@ -1,266 +1,273 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+  body {
+    background-color:#2e7d32;
+  }
+  </style>
+</head>
 
 
-  <body>
+<body>
+  <div id="index-banner" class="documentation">
+    <!-- *************************************************************************************************+***************-->
+    <div class="card ">
+      <div class="card-content green darken-3" > <!--COLOR DEL FONDO DE LAS CARD -->
+        <span style = "color:black; font-size: 50px;" class="card-title"><b><TT>Semana 1</tt><b></span></br>
+          <p style="color:#fafafa; font-size: 18px;"> <CODE>
+            Ante la propuesta de trabajo, la cual consiste en desarrollar aplicaciones móviles nativas,
+            que son las que se desarrollan específicamente para cada sistema operativo, lenguaje Swift
+            para iOS, Java para Android. Con el foco principal apuntando a la integración continua,
+            lo que se traduce en compilar y ejecutar pruebas en todo el código que se va generando.</br>
+            La primera actividad consiste en estudiar y posteriormente seleccionar las herramientas
+            para trabajar. En este contexto, iniciamos con las instalación de los entornos de
+            desarrollo Android Studio y Xcode, se crearon cuentas en GitHub y Jira Atlassian, así ya contabamos con herramientas
+            de almacenaje y gestión del proyecto.</br>
+            A pesar de que existen más oferta con respecto a herramientas de repositorio y gestión
+            de proyectos, se decidió trabajar con GitHub por la razón de que se tenía una
+            idea formada de cómo se utiliza apropiadamente, por otro lado Jira Atlassian
+            fue escogido por ser desconocido y ademas por que la empresa en sí, quería
+            familiarizarse con esta herramienta.</br>
+            Una vez instaladas las herramientas, se inició con la ejecución de una serie
+            de tutoriales para desarrollar aplicaciones móviles y a la vez hacer uso de los
+            repositorios y el instrumento de gestión.</br>
+            Para la realización de los tutoriales se utilizó la documentación existente en
+            las paginas de Android y Apple respectivamente, con ello se nos permitió hacer
+            distintos tipos de pruebas las cuales van desde hacer un “Hello World”, hasta hacer
+            una conexión “http” o “https”.</br>
+            Luego, se eligió una herramienta de integración continua para estudiarla y ponerla en
+            marcha con una de las aplicaciones creadas como prueba. Jenkins fue el instrumento escogido,
+            se logro instalarlo en un servidor local, enlazarlo con un proyecto alojado en GitHub,
+            de modo que cada cierto tiempo realizaba una compilación del código y en caso de encontrar
+            algún error, este quedaria registrado, para poder arreglarlo. </br>
+            Para integrar Jenkins, es necesario instalar una serie de plugins como soporte dependiendo
+            del tipo de aplicación que se esté desarrollando, ya que existen plugins diferentes para
+            aplicaciones Android y IOs. Esto permitirá que reconozca el lenguaje y efectué la compilación
+            correctamente.</br>
+          </code>
+        </p>
+      </br>
+      <div class="card-action">
+        <a href="https://aws.amazon.com/es/devops/continuous-integration/" style="font-size: 15px; color:blue;" ><u>Integración continua</u></a>
+        <a href="http://qode.pro/blog/que-es-una-app-nativa/"style="font-size: 15px; color:blue;"><u>Aplicaciones móviles nativas</u></a>
+      </div>
+      <div class="card-action">
+        <a href="https://developer.android.com/studio/index.html?hl=es-419" style="font-size: 15px; color:blue;"><u>Android Studio</u></a>
+        <a href="https://developer.apple.com/xcode/" style="font-size: 15px; color:blue;"><u>Xcode</u></a>
+        <a href="https://github.com/" style="font-size: 15px; color:blue;"><u>GitHub</u></a>
+        <a href="https://es.atlassian.com/software/jira" style="font-size: 15px; color:blue;"><u>Jira Atlassian</u></a>
+        <a href="https://jenkins.io/" style="font-size: 15px; color:blue;"><u>Jenkins</u></a>
+      </div>
+      <div class="card-action">
+        <a href="https://developer.android.com/develop/index.html" style="font-size: 15px; color:blue;"><u>Documentación Android</u></a>
+        <a href="https://developer.apple.com/documentation/" style="font-size: 15px; color:blue;"><u>Documentación Apple</u></a>
+      </div>
+    </div>
+  </div>
+  <!-- *************************************************************************************************+***************-->
+</br>   <!--Semana 2-->
+
+<div class="card ">
+  <div class="card-content green darken-3" > <!--COLOR DEL FONDO DE LAS CARD -->
+    <span style = "color:black; font-size: 50px;" class="card-title"><b><TT>Semana 2</tt><b></span></br>
+      <p style="color:#fafafa; font-size: 18px;">
+        <CODE>
+          En este periodo ya había una idea más clara sobre que se tenía que desarrollar,
+          pero se decidió por seguir haciendo distintas pruebas de modo de lograr integrar
+          Jenkins tanto a aplicaciones Android y IOs. </br>
+          Se desarrolló una aplicación en Android la cual, al presionar un botón
+          se obtiene la dirección Mac del dispositivo.</br>
+          Las aplicaciones, fueron almacenadas en el repositorio Github y para esto se utilizaron
+          una serie de comandos en la terminal para registrar los avances.</br>
+          Entre los comandos usados tenemos:</br>
+          &#9702; git init : para iniciar repositorio en un directorio.</br>
+          &#9702; git add. : para agregar todo el contenido modificado o nuevo.</br>
+          &#9702; git commit -m “mensaje” : se utiliza para consignar un conjunto de cambios.</br>
+          &#9702; git push : usado para subir los archivos.</br>
+          &#9702; git branch : se utilizó para crear funcionalidades sin dañar la rama principal.</br>
+          &#9702; git checkout : se usa para moverse entre ramas o commits.</br>
+          &#9702; git merge : utilizado para fusionar las nuevas funcionalidades creadas
+          en las ramas con la rama master.</br>
+          Lo presentado hasta en su mayoría está dentro de la capa de presentación (Front end),
+          esto dado que es más simple trabajar. </br></br>
+          Se empezó a trabajar la parte referente a la capa de acceso a datos (Back end),
+          para ello se decidió trabajar con Node.js y MongoDB el cual es una base de datos NoSQL.</br>
+          Node.js hoy en día juega un papel importante en la pila de tecnologías de muchas empresas
+          de alto perfil, es por ello que se decidió contar con esta herramienta. Respecto a MongoDB
+          esta es considera la base de datos NoSQL líder y debido a que existe mucha documentación
+          sobre su uso, se decidio por optar por ella.</br>
+          Para poner en marcha esta parte, se partió estudiando como definir una API,
+          como configurar mongo para tener una base de datos local y como hace conexión del
+          dispositivo móvil con un servidor, utilizando el protocolo Http.</br>
+        </code>
+      </p>
+
+      <div class="card-action">
+        <a href="https://nodejs.org/es/" style="font-size: 15px; color:blue;" ><u>Node.js</u></a>
+        <a href="https://www.mongodb.com/es" style="font-size: 15px; color:blue;" ><u>MongoDB</u></a>
+        <a href="http://rogerdudler.github.io/git-guide/index.es.html" style="font-size: 15px; color:blue;" ><u>Guía GitHub</u></a>
+      </div>
+    </div>
+  </div>
+  <!-- *************************************************************************************************+***************-->
+</br>  <!--Semana 3-->
+
+<div class="card ">
+  <div class="card-content green darken-3" > <!--COLOR DEL FONDO DE LAS CARD -->
+    <span style = "color:black; font-size: 50px;" class="card-title"><b><TT>Semana 3</tt><b></span></br>
+      <p style="color:#fafafa; font-size: 18px;">
+        <CODE>
+        Se inició el desarrollo de la aplicación móvil para Android,
+        haciendo uso de git para desarrollar el proyecto en módulos,
+        entre las tareas más destacadas podemos diferenciar las siguientes: </br>
+        &#9702; Módulo para obtener la Geoposición.</br>
+        &#9702; Método para obtener id “Mac”.</br>
+        &#9702; Módulo de comunicación Https.</br>
+        &#9702; Vista de la aplicación.</br>
+        Estructura de la aplicación: </br>
+        El framework de android separa el proyecto en directorios </br>
+      </br> <img class="centrado" src="images/s31.png" ></br>
+      APP: se separa en tres sub directorios: </br>
+      &#9702; Manifests:Contiene el archivo que con los permisos y configuraciones
+      iniciales de la Aplicación.</br>
+      &#9702; Java:Contiene los archivos con las clases en java donde se programan
+      las lógicas de la aplicación.</br>
+      &#9702; Res: Contiene los archivos de las vistas, para el diseño de
+      vistas de la app, los archivos de aca son de lenguaje de etiquetas xml donde
+      se pueden definir  recursos de widget como botones, labels, formularios, etc.</br>
+
+      &#8211; Método para obtener  la posición</br>
+      Para este método se usaron las librerías que proporciona android para detectar
+      la posición del celular mediante GPS, Location Manager  es una clase que nos permite
+      capturar esta información, además de otras clases para almacenar las instancias como
+      Location() y location Listener.</br>
+
+      &#8211; Método para obtener la mac del dispositivo :</br>
+      MacDevice.java es una clase que se ejecuta en el dispositivo y
+      retorna un string con la mac. </br>
+
+      &#8211; Comunicación HTTPS</br>
+
+      Para ejecutar peticiones HTTPS tuvimos que crear clases que
+      extienden de la Clase AsincronycTasck(), para mantener la comunicación
+      en otro hilo de ejecución, además de importar la librería HttpsUrlConnection()
+      que sostiene los métodos para formar las peticiones Response y brinda de un mecanismo
+      para tratar los Response.</br>
+
+      &#8211; Cambio de repositorio </br>
+
+      Para seguir con el  alineamiento estratégico de la empresa
+      decidimos cambiar de servidor de repositorio  de GitHub a Bitbucket
+      puesto que este último es una Herramienta de Atlassians y pensamos que nos
+      podría dar sinergia con Jira.</br>
+
+      &#8211; Vista de la aplicación </br>
+
+      En el directorio res  se encuentran los Layouts que describen
+      tanto en forma gráfica como lenguaje xml los componentes de las vistas </br>
+
+    </br> <img class="centrado" src="images/s32.png" ></br>
+    &#8211; Servidor local </br>
+
+    Para hacer pruebas de comunicación  levantamos un servicio de
+    Api local con Node Js utilizando el Framework de Express conectado
+    con una base de datos mongodb.  </br> </code>
+  </p></br>
+  <div class="card-action">
+    <a href="https://aws.amazon.com/es/training/?nc2=h_l2_tr" style="font-size: 15px; color:blue;" ><u>Capacitación</u></a>
+    <a href="https://docs.aws.amazon.com/es_es/apigateway/latest/developerguide/welcome.html" style="font-size: 15px; color:blue;" ><u>API Gateway</u></a>
+
+  </div>
+</div>
+</div>
+
 <!-- *************************************************************************************************+***************-->
-      <div class="card ">
-        <div class="card-content green darken-3" > <!--COLOR DEL FONDO DE LAS CARD -->
-          <span style = "color:black; font-size: 50px;" class="card-title"><b><TT>Semana 1</tt><b></span></br>
-            <p style="color:#fafafa; font-size: 18px;"> <CODE>
-              Ante la propuesta de trabajo, la cual consiste en desarrollar aplicaciones móviles nativas,
-              que son las que se desarrollan específicamente para cada sistema operativo, lenguaje Swift
-              para iOS, Java para Android. Con el foco principal apuntando a la integración continua,
-               lo que se traduce en compilar y ejecutar pruebas en todo el código que se va generando.</br>
-               La primera actividad consiste en estudiar y posteriormente seleccionar las herramientas
-               para trabajar. En este contexto, iniciamos con las instalación de los entornos de
-               desarrollo Android Studio y Xcode, se crearon cuentas en GitHub y Jira Atlassian, así ya contabamos con herramientas
-               de almacenaje y gestión del proyecto.</br>
-                A pesar de que existen más oferta con respecto a herramientas de repositorio y gestión
-                de proyectos, se decidió trabajar con GitHub por la razón de que se tenía una
-                idea formada de cómo se utiliza apropiadamente, por otro lado Jira Atlassian
-                fue escogido por ser desconocido y ademas por que la empresa en sí, quería
-                familiarizarse con esta herramienta.</br>
-                Una vez instaladas las herramientas, se inició con la ejecución de una serie
-                de tutoriales para desarrollar aplicaciones móviles y a la vez hacer uso de los
-                repositorios y el instrumento de gestión.</br>
-                Para la realización de los tutoriales se utilizó la documentación existente en
-                las paginas de Android y Apple respectivamente, con ello se nos permitió hacer
-                distintos tipos de pruebas las cuales van desde hacer un “Hello World”, hasta hacer
-                una conexión “http” o “https”.</br>
-                Luego, se eligió una herramienta de integración continua para estudiarla y ponerla en
-                marcha con una de las aplicaciones creadas como prueba. Jenkins fue el instrumento escogido,
-                 se logro instalarlo en un servidor local, enlazarlo con un proyecto alojado en GitHub,
-                 de modo que cada cierto tiempo realizaba una compilación del código y en caso de encontrar
-                 algún error, este quedaria registrado, para poder arreglarlo. </br>
-                Para integrar Jenkins, es necesario instalar una serie de plugins como soporte dependiendo
-                del tipo de aplicación que se esté desarrollando, ya que existen plugins diferentes para
-                aplicaciones Android y IOs. Esto permitirá que reconozca el lenguaje y efectué la compilación
-                correctamente.</br>
-              </code>
+</br>  <!--Semana 4-->
 
-            </p></br>
-              <div class="card-action">
-                <a href="https://aws.amazon.com/es/devops/continuous-integration/" style="font-size: 13px; color:blue;" ><u>Integración continua</u></a>
-                <a href="http://qode.pro/blog/que-es-una-app-nativa/"style="font-size: 13px; color:blue;"><u>Aplicaciones móviles nativas</u></a>
-              </div>
-              <div class="card-action">
-                <a href="https://developer.android.com/studio/index.html?hl=es-419" style="font-size: 13px; color:blue;"><u>Android Studio</u></a>
-                <a href="https://developer.apple.com/xcode/" style="font-size: 13px; color:blue;"><u>Xcode</u></a>
-                <a href="https://github.com/" style="font-size: 13px; color:blue;"><u>GitHub</u></a>
-                <a href="https://es.atlassian.com/software/jira" style="font-size: 13px; color:blue;"><u>Jira Atlassian</u></a>
-                <a href="https://jenkins.io/" style="font-size: 13px; color:blue;"><u>Jenkins</u></a>
-              </div>
-              <div class="card-action">
-                <a href="https://developer.android.com/develop/index.html" style="font-size: 13px; color:blue;"><u>Documentación Android</u></a>
-                <a href="https://developer.apple.com/documentation/" style="font-size: 13px; color:blue;"><u>Documentación Apple</u></a>
-              </div>
-            </div>
-          </div>
+<div class="card ">
+  <div class="card-content green darken-3" > <!--COLOR DEL FONDO DE LAS CARD -->
+    <span style = "color:black; font-size: 50px;" class="card-title"><b><TT>Semana 4</tt><b></span></br>
+      <p style="color:#fafafa; font-size: 18px;">
+        <CODE>
+        Amazon nos proporciona una gran cantidad de servicios, los que utilizamos
+        para efectos del primer sprint de desarrollo son solo 2, (Lambda, y Api GateWay) y
+        se propone agregar el uso de DynamoDB para los próximos Sprint. </br>
+        Funciones en Lambda: </br>
+        Una función es un código con entradas que será ejecutado por Amazon y que pueden efectuar
+        una acción que puede interactuar con otros recursos de amazon, estas funciones pueden ser escritas
+        en varios lenguajes por ejemplo Java, C, Python, NodeJs, nosotros elegimos usar NodeJs para
+        conservar el modelo que teníamos como backend que teniamos en Express js. </br>
+        Ejemplo de función con Lambda: </br>
+        Para crear una función de Lambda, se hace de la siguiente forma:</br>
+        Dentro de AWS selecciona el servicio de Lambda, y selecciona
+        la opción de crear una nueva función. </br>
+    
+    </br> <img class="centrado" src="images/s41.png" ></br>
+
+
+      Ahora hay que completar los siguientes campos nombre de la funcion,
+      descripcion, runtime y role. </br>
+
+
+  </br> <img class="centrado" src="images/s42.png" ></br>
+
+
+    Nombre: Debes poner un nombre para identificar tu función. </br>
+    Descripción: Permite poner una descripción de la función. </br>
+    Runtime: Corresponde al intérprete en el cual  correrá el código, puede ser Java,
+    Python, Script. </br>
+    Role: Los roles en amazon definen los permisos que nuestra funcion tendra con
+    otros recursos y servicios de Amazon. ver IAM de amazon para gestionar roles.</br></br>
+
+    Completado los recursos ahora ya tienes una funcion hecha en Lambda, nosotros escogimos
+    usar NodeJs para codificar nuestras funciones, Los recursos a los cuales nuestras
+    funciones podrán acceder las dará el role que se le asigne a la función. mientras que
+    los triggers se pueden configurar desde la función. para efectos de nuestro primer sprint,
+    hicimos una función que retorna  un atributo de la llegada.</br>
+
+
+</br> <img class="centrado" src="images/s43.png" ></br>
+
+  Las entradas de una función de Lambda son estructuras del tipo Json por como el siguiente:</br>
+</br> <img class="centrado" src="images/s44.png" ></br>
+
+Estas  pueden provenir del API Gateway si lo configuras como Trigger
+de lanzamiento para la función, aunque igual puede ser ejecutado por
+varios otros servicios de amazon.</br>
+En nuestro caso lo configuramos pensando en recibir una
+llamada proveniente de API Gateway. </br>
+</br> <img class="centrado" src="images/s45.png" ></br>
+
+API Gateway es un servicio que facilita la comunicación de los demás servicios
+de amazon proporciona sistemas de Rooteos y sistemas de autentificación que le
+pondremos el foco en la siguiente sprint. pero lo dejamos configurado para que
+reciba las peticiones HTTPs  provenientes de nuestra aplicacion y las comunique con
+el microservicios de lamda.</br>
+</br> <img class="centrado" src="images/s46.png" ></br>
+
+</p>
+
+</code>
+</br>
+<div class="card-action">
+  <a href="https://aws.amazon.com/es/free/?sc_channel=PS&sc_campaign=acquisition_CL&sc_publisher=google&sc_medium=english_cloud_computing_hv_b&sc_content=aws_core_e&sc_detail=aws&sc_category=cloud_computing&sc_segment=188900648287&sc_matchtype=e&sc_country=CL&s_kwcid=AL!4422!3!188900648287!e!!g!!aws&ef_id=WldLDQAAADmz96cK:20180202155127:s" style="font-size: 15px; color:blue;" ><u>Amazon Web Services</u></a>
+  <a href=""></a>
+</div>
+</div>
+</div>
 <!-- *************************************************************************************************+***************-->
-        </br>   <!--Semana 2-->
 
-        <div class="card ">
-          <div class="card-content green darken-3" > <!--COLOR DEL FONDO DE LAS CARD -->
-            <span style = "color:black; font-size: 50px;" class="card-title"><b><TT>Semana 2</tt><b></span></br>
-              <p style="color:#fafafa; font-size: 18px;"> <CODE>
-              En este periodo ya había una idea más clara sobre que se tenía que desarrollar,
-               pero se decidió por seguir haciendo distintas pruebas de modo de lograr integrar
-               Jenkins tanto a aplicaciones Android y IOs. </br>
-               Se desarrolló una aplicación en Android la cual, al presionar un botón
-               se obtiene la dirección Mac del dispositivo.</br>
-               Las aplicaciones, fueron almacenadas en el repositorio Github y para esto se utilizaron
-               una serie de comandos en la terminal para registrar los avances.</br>
-               Entre los comandos usados tenemos:</br>
-               &#9702; git init : para iniciar repositorio en un directorio.</br>
-               &#9702; git add. : para agregar todo el contenido modificado o nuevo.</br>
-               &#9702; git commit -m “mensaje” : se utiliza para consignar un conjunto de cambios.</br>
-               &#9702; git push : usado para subir los archivos.</br>
-               &#9702; git branch : se utilizó para crear funcionalidades sin dañar la rama principal.</br>
-               &#9702; git checkout : se usa para moverse entre ramas o commits.</br>
-               &#9702; git merge : utilizado para fusionar las nuevas funcionalidades creadas
-                en las ramas con la rama master.</br>
-                Lo presentado hasta en su mayoría está dentro de la capa de presentación (Front end),
-                esto dado que es más simple trabajar. </br></br>
-                Se empezó a trabajar la parte referente a la capa de acceso a datos (Back end),
-                para ello se decidió trabajar con Node.js y MongoDB el cual es una base de datos NoSQL.</br>
-                Node.js hoy en día juega un papel importante en la pila de tecnologías de muchas empresas
-                de alto perfil, es por ello que se decidió contar con esta herramienta. Respecto a MongoDB
-                esta es considera la base de datos NoSQL líder y debido a que existe mucha documentación
-                sobre su uso, se decidio por optar por ella.</br>
-                Para poner en marcha esta parte, se partió estudiando como definir una API,
-                como configurar mongo para tener una base de datos local y como hace conexión del
-                dispositivo móvil con un servidor, utilizando el protocolo Http.</br>
-
-              </p>
-          </div>
-          <div class="card-action">
-            <a href="https://nodejs.org/es/">Node.js</a>
-            <a href="https://www.mongodb.com/es">MongoDB</a>
-            <a href="http://rogerdudler.github.io/git-guide/index.es.html">Guía GitHub</a>
-          </div>
-
-        </div>
-
-      </br>  <!--Semana 3-->
-
-      <div class="card blue-grey darken-1">
-        <div class="card-content black-text">
-          <span class="card-title" style="font-size: 40px;"><b>Semana 3<b></span></br>
-            <p style="color:white;" >
-              Se inició el desarrollo de la aplicación móvil para Android,
-               haciendo uso de git para desarrollar el proyecto en módulos,
-               entre las tareas más destacadas podemos diferenciar las siguientes: </br>
-               &#9702; Módulo para obtener la Geoposición.</br>
-               &#9702; Método para obtener id “Mac”.</br>
-               &#9702; Módulo de comunicación Https.</br>
-               &#9702; Vista de la aplicación.</br>
-               Estructura de la aplicación: </br>
-              El framework de android separa el proyecto en directorios </br>
-            </br> <img class="centrado" src="images/s31.png" ></br>
-            APP: se separa en tres sub directorios: </br>
-               &#9702; Manifests:Contiene el archivo que con los permisos y configuraciones
-              iniciales de la Aplicación.</br>
-               &#9702; Java:Contiene los archivos con las clases en java donde se programan
-              las lógicas de la aplicación.</br>
-               &#9702; Res: Contiene los archivos de las vistas, para el diseño de
-              vistas de la app, los archivos de aca son de lenguaje de etiquetas xml donde
-              se pueden definir  recursos de widget como botones, labels, formularios, etc.</br>
-
-              &#8211; Método para obtener  la posición</br>
-                Para este método se usaron las librerías que proporciona android para detectar
-                la posición del celular mediante GPS, Location Manager  es una clase que nos permite
-                capturar esta información, además de otras clases para almacenar las instancias como
-                Location() y location Listener.</br>
-
-                &#8211; Método para obtener la mac del dispositivo :</br>
-                MacDevice.java es una clase que se ejecuta en el dispositivo y
-                 retorna un string con la mac. </br>
-
-                 &#8211; Comunicación HTTPS</br>
-
-                 Para ejecutar peticiones HTTPS tuvimos que crear clases que
-                  extienden de la Clase AsincronycTasck(), para mantener la comunicación
-                  en otro hilo de ejecución, además de importar la librería HttpsUrlConnection()
-                  que sostiene los métodos para formar las peticiones Response y brinda de un mecanismo
-                   para tratar los Response.</br>
-
-                   &#8211; Cambio de repositorio </br>
-
-                    Para seguir con el  alineamiento estratégico de la empresa
-                     decidimos cambiar de servidor de repositorio  de GitHub a Bitbucket
-                     puesto que este último es una Herramienta de Atlassians y pensamos que nos
-                      podría dar sinergia con Jira.</br>
-
-                        &#8211; Vista de la aplicación </br>
-
-                    En el directorio res  se encuentran los Layouts que describen
-                    tanto en forma gráfica como lenguaje xml los componentes de las vistas </br>
-
-                  </br> <img class="centrado" src="images/s32.png" ></br>
-                  &#8211; Servidor local </br>
-
-                  Para hacer pruebas de comunicación  levantamos un servicio de
-                  Api local con Node Js utilizando el Framework de Express conectado
-                   con una base de datos mongodb.  </br>
-
-
-
-
-
-
-
-            </p></br>
-              <div class="card-action">
-                <a href="https://aws.amazon.com/es/training/?nc2=h_l2_tr">Capacitación</a>
-                <a href="https://docs.aws.amazon.com/es_es/apigateway/latest/developerguide/welcome.html">API Gateway</a>
-
-              </div>
-            </div>
-          </div>
-
-      </br>  <!--Semana 4-->
-
-      <div class="card blue-grey darken-1">
-        <div class="card-content black-text">
-          <span class="card-title" style="font-size: 40px;"><b>Semana 4<b></span></br>
-            <p style="color:white;" >
-                Amazon nos proporciona una gran cantidad de servicios, los que utilizamos
-                 para efectos del primer sprint de desarrollo son solo 2, (Lambda, y Api GateWay) y
-                 se propone agregar el uso de DynamoDB para los próximos Sprint. </br>
-                 Funciones en Lambda: </br>
-                Una función es un código con entradas que será ejecutado por Amazon y que pueden efectuar
-                una acción que puede interactuar con otros recursos de amazon, estas funciones pueden ser escritas
-                 en varios lenguajes por ejemplo Java, C, Python, NodeJs, nosotros elegimos usar NodeJs para
-                 conservar el modelo que teníamos como backend que teniamos en Express js. </br>
-                 Ejemplo de función con Lambda: </br>
-                 Para crear una función de Lambda, se hace de la siguiente forma:</br>
-                 Dentro de AWS selecciona el servicio de Lambda, y selecciona
-                 la opción de crear una nueva función. </br>
-               </p>
-
-                </br> <img class="centrado" src="images/s41.png" ></br>
-
-              <p style="color:white;">
-                Ahora hay que completar los siguientes campos nombre de la funcion,
-                descripcion, runtime y role. </br>
-              </p>
-
-            </br> <img class="centrado" src="images/s42.png" ></br>
-
-            <p style="color:white;">
-              Nombre: Debes poner un nombre para identificar tu función. </br>
-              Descripción: Permite poner una descripción de la función. </br>
-              Runtime: Corresponde al intérprete en el cual  correrá el código, puede ser Java,
-              Python, Script. </br>
-              Role: Los roles en amazon definen los permisos que nuestra funcion tendra con
-              otros recursos y servicios de Amazon. ver IAM de amazon para gestionar roles.</br></br>
-
-              Completado los recursos ahora ya tienes una funcion hecha en Lambda, nosotros escogimos
-               usar NodeJs para codificar nuestras funciones, Los recursos a los cuales nuestras
-               funciones podrán acceder las dará el role que se le asigne a la función. mientras que
-               los triggers se pueden configurar desde la función. para efectos de nuestro primer sprint,
-               hicimos una función que retorna  un atributo de la llegada.</br>
-            </p>
-
-          </br> <img class="centrado" src="images/s43.png" ></br>
-          <p style="color:white;">
-              Las entradas de una función de Lambda son estructuras del tipo Json por como el siguiente:</br>
-            </br> <img class="centrado" src="images/s44.png" ></br>
-
-            Estas  pueden provenir del API Gateway si lo configuras como Trigger
-            de lanzamiento para la función, aunque igual puede ser ejecutado por
-            varios otros servicios de amazon.</br>
-            En nuestro caso lo configuramos pensando en recibir una
-             llamada proveniente de API Gateway. </br>
-           </br> <img class="centrado" src="images/s45.png" ></br>
-
-           API Gateway es un servicio que facilita la comunicación de los demás servicios
-            de amazon proporciona sistemas de Rooteos y sistemas de autentificación que le
-            pondremos el foco en la siguiente sprint. pero lo dejamos configurado para que
-            reciba las peticiones HTTPs  provenientes de nuestra aplicacion y las comunique con
-            el microservicios de lamda.</br>
-          </br> <img class="centrado" src="images/s46.png" ></br>
-
-          </p>
-
-             </br>
-              <div class="card-action">
-                <a href="https://aws.amazon.com/es/free/?sc_channel=PS&sc_campaign=acquisition_CL&sc_publisher=google&sc_medium=english_cloud_computing_hv_b&sc_content=aws_core_e&sc_detail=aws&sc_category=cloud_computing&sc_segment=188900648287&sc_matchtype=e&sc_country=CL&s_kwcid=AL!4422!3!188900648287!e!!g!!aws&ef_id=WldLDQAAADmz96cK:20180202155127:s">Amazon Web Services</a>
-                <a href=""></a>
-              </div>
-            </div>
-          </div>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-    </body>
-    </html>
+<!-- *************************************************************************************************+***************-->
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</div>
+</body>
+</html>
