@@ -122,8 +122,8 @@
 <div class="card ">
   <div class="card-content green darken-3" > <!--COLOR DEL FONDO DE LAS CARD -->
     <span style = "color:white; font-size: 50px;" class="card-title"><b><TT><u>Semana 3</u></tt><b></span></br>
-      <p style="color:#fafafa; font-size: 18px;">
-        <CODE>
+      <p>
+        <CODE style="color:#fafafa; font-size: 18px;">
         Se inició el desarrollo de la aplicación móvil para Android,
         haciendo uso de git para desarrollar el proyecto en módulos,
         entre las tareas más destacadas podemos diferenciar las siguientes: </br>
@@ -133,7 +133,7 @@
         &#9702; Vista de la aplicación.</br>
         Estructura de la aplicación: </br>
         El framework de android separa el proyecto en directorios </br>
-      </br> <img class="centrado" src="images/s31.png" ></br>
+      </br><center><img class="centrado" src="images/s31.png" ></center></br>
       APP: se separa en tres sub directorios: </br>
       &#9702; Manifests:Contiene el archivo que con los permisos y configuraciones
       iniciales de la Aplicación.</br>
@@ -173,7 +173,7 @@
       En el directorio res  se encuentran los Layouts que describen
       tanto en forma gráfica como lenguaje xml los componentes de las vistas </br>
 
-    </br> <img class="centrado" src="images/s32.png" ></br>
+    </br><center> <img class="centrado" src="images/s32.png" ></center></br>
     &#8211; Servidor local </br>
 
     Para hacer pruebas de comunicación  levantamos un servicio de
@@ -194,8 +194,8 @@
 <div class="card ">
   <div class="card-content green darken-3" > <!--COLOR DEL FONDO DE LAS CARD -->
     <span style = "color:white; font-size: 50px;" class="card-title"><b><TT><u>Semana 4</u></tt><b></span></br>
-      <p style="color:#fafafa; font-size: 18px;">
-        <CODE>
+      <p>
+        <CODE style="color:#fafafa; font-size: 18px;">
         Amazon nos proporciona una gran cantidad de servicios, los que utilizamos
         para efectos del primer sprint de desarrollo son solo 2, (Lambda, y Api GateWay) y
         se propone agregar el uso de DynamoDB para los próximos Sprint. </br>
@@ -209,14 +209,14 @@
         Dentro de AWS selecciona el servicio de Lambda, y selecciona
         la opción de crear una nueva función. </br>
 
-    </br> <img class="centrado" src="images/s41.png" ></br>
+    </br><center> <img class="centrado" src="images/s41.png" ></center></br>
 
 
       Ahora hay que completar los siguientes campos nombre de la funcion,
       descripcion, runtime y role. </br>
 
 
-  </br> <img class="centrado" src="images/s42.png" ></br>
+  </br><center> <img class="centrado" src="images/s42.png" ></center></br>
 
 
     Nombre: Debes poner un nombre para identificar tu función. </br>
@@ -233,24 +233,24 @@
     hicimos una función que retorna  un atributo de la llegada.</br>
 
 
-</br> <img class="centrado" src="images/s43.png" ></br>
+</br> <center><img class="centrado" src="images/s43.png" ></center></br>
 
   Las entradas de una función de Lambda son estructuras del tipo Json por como el siguiente:</br>
-</br> <img class="centrado" src="images/s44.png" ></br>
+</br> <center><img class="centrado" src="images/s44.png" ></center></br>
 
 Estas  pueden provenir del API Gateway si lo configuras como Trigger
 de lanzamiento para la función, aunque igual puede ser ejecutado por
 varios otros servicios de amazon.</br>
 En nuestro caso lo configuramos pensando en recibir una
 llamada proveniente de API Gateway. </br>
-</br> <img class="centrado" src="images/s45.png" ></br>
+</br> <center><img class="centrado" src="images/s45.png" ></center></br>
 
 API Gateway es un servicio que facilita la comunicación de los demás servicios
 de amazon proporciona sistemas de Rooteos y sistemas de autentificación que le
 pondremos el foco en la siguiente sprint. pero lo dejamos configurado para que
 reciba las peticiones HTTPs  provenientes de nuestra aplicacion y las comunique con
 el microservicios de lamda.</br>
-</br> <img class="centrado" src="images/s46.png" ></br>
+</br> <center><img class="centrado" src="images/s46.png" ></center></br>
 
 </p>
 
@@ -267,15 +267,15 @@ el microservicios de lamda.</br>
 <div class="card ">
   <div class="card-content green darken-3" > <!--COLOR DEL FONDO DE LAS CARD -->
     <span style = "color:white; font-size: 50px;" class="card-title"><b><TT><u>Semana 5</u></tt><b></span></br>
-      <p style="color:#fafafa; font-size: 18px;">
-         <CODE>
+      <p>
+         <CODE style="color:#fafafa; font-size: 18px;">
            Luego de desarrollar la aplicación móvil para dispositivos Android, no en su totalidad.
            se comenzó el desarrollo de la aplicación para dispositivos IOs, para esto se ocupo el lenguaje de
            programación Swift y Xcode como entorno de desarrollo. Se utilizó la documentación oficial y una serie
            de tutoriales para construir la aplicación.</br>
            La aplicación construida consiste únicamente en enviar datos a una base de datos NOSQL,
            esto al momento de presionar un botón, y una serie de validaciones para ello.</br>
-          </br> <img class="centrado" src="images/s51.png" ></br>
+         </br> <center><img class="centrado" src="images/s51.png" ></center></br>
           Al presionar el botón “REGISTRAR AHORA”, se envia una dirección del dispositivo
           como identificador, y los datos de la ubicación, esto es coordenadas latitud y longitud.
           Al legar al servidor, primero comprueba si la dirección del dispositivo corresponde a
@@ -302,36 +302,36 @@ el microservicios de lamda.</br>
            &#8211; Presionar “enter" tres veces.</br>
           Con estos pasos ya se puede obtener una ssh-keygen. El paso siguiente es agregar
           esta llave a bitbucket y asignarle un nombre.</br>
-          </br> <img class="centrado" src="images/s52.png" ></br>
-          </br> <img class="centrado" src="images/s53.png" ></br>
+          </br><center> <img class="centrado" src="images/s52.png" ></center></br>
+          </br><center> <img class="centrado" src="images/s53.png" ></center></br>
           El paso siguiente, es ir a Jenkins y agregar una credencial asociada a la SSH key.</br>
-          </br> <img class="centrado" src="images/s54.png" ></br>
-          </br> <img class="centrado" src="images/s55.png" ></br>
-          </br> <img class="centrado" src="images/s56.png" ></br>
+          </br><center> <img class="centrado" src="images/s54.png" ></center></br>
+          </br><center> <img class="centrado" src="images/s55.png" ></center></br>
+          </br><center> <img class="centrado" src="images/s56.png" ></center></br>
           Finalmente, para asociar un repositorio a una tarea creada en Jenkins, hay que
           dirigirse a configuración de la tarea y hacer lo siguiente:</br>
-          </br> <img class="centrado" src="images/s57.png" ></br>
+          </br><center> <img class="centrado" src="images/s57.png" ></center></br>
           Se pega en enlace SSH que proporciona Bitbucket, y se asocia a la credencial creada.</br></br>
           Realizar configuración de Jenkins, para ejecutar pruebas en el código fuente,
           no es algo trivial, de hecho para cada tipo de desarrollo existen características diferentes.</br>
           Para adaptarlo al proyecto IOs, se encuentra el plugin “Xcode Integration”, el cual permite compilar
           el código fuente.</br>
           A continuación se muestra la adecuación de realizada en el software:</br>
-          </br> <img class="centrado" src="images/s58.png" ></br>
-          </br> <img class="centrado" src="images/s59.png" ></br>
-          </br> <img class="centrado" src="images/s510.png" ></br>
+          </br><center> <img class="centrado" src="images/s58.png" ></center></br>
+          </br><center> <img class="centrado" src="images/s59.png" ></center></br>
+          </br><center> <img class="centrado" src="images/s510.png" ></center></br>
           Para adaptarlo a proyectos Android, se debe instalar el plugin “Gradle Plugin”.
           Además se deben configurar una serie de variables de entorno.</br>
           A continuación se muestra la adecuación de realizada en el software:</br>
-          </br> <img class="centrado" src="images/s511.png" ></br>
-          </br> <img class="centrado" src="images/s512.png" ></br>
-          </br> <img class="centrado" src="images/s513.png" ></br></br>
+          </br><center> <img class="centrado" src="images/s511.png" ></center></br>
+          </br><center> <img class="centrado" src="images/s512.png" ></center></br>
+          </br><center> <img class="centrado" src="images/s513.png" ></center></br>
           La manera que tiene Jenkins de evidenciar el estado actual de un proyecto,
           es por medio de simbolo de colores. El azul significa que todo va bien y rojo que
           se produjo algún error, además la herramientas proporciona un historia de los resultados obtenidos</br>
-          </br> <img class="centrado" src="images/s514.png" ></br>
-          </br> <img class="centrado" src="images/s515.png" ></br>
-         </code>
+          </br><center> <img class="centrado" src="images/s514.png" ></center></br>
+          </br><center> <img class="centrado" src="images/s515.png" ></center></br>
+        </code>
        </p>
 
   </br>
