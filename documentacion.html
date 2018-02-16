@@ -141,6 +141,7 @@
   <span style = "color:white; font-size: 50px;" class="card-title"><b><TT><u>Semana 3</u></tt><b></span></br>
     <p>
       <CODE style="color:#fafafa; font-size: 18px;">
+      <center><img style="float:right;" class="centrado" src="images/s31.png" ></center>
       Se inició el desarrollo de la aplicación móvil para Android,
       haciendo uso de git para desarrollar el proyecto en módulos,
       entre las tareas más destacadas podemos diferenciar las siguientes: </br>
@@ -150,7 +151,7 @@
       &#9702; Vista de la aplicación.</br>
       Estructura de la aplicación: </br>
       El framework de android separa el proyecto en directorios </br>
-    </br><center><img class="centrado" src="images/s31.png" ></center></br>
+
     APP: se separa en tres sub directorios: </br>
     &#9702; Manifests:Contiene el archivo que con los permisos y configuraciones
     iniciales de la Aplicación.</br>
@@ -250,10 +251,11 @@
 
 
 </br> <center><img class="centrado" src="images/s43.png" ></center></br>
-
-Las entradas de una función de Lambda son estructuras del tipo Json por como el siguiente:</br>
-</br> <center><img class="centrado" src="images/s44.png" ></center></br>
-
+ <center><img style="float:right;" class="centrado" src="images/s44.png" ></center></br>
+Las entradas de una función de Lambda son estructuras del tipo Json por como el siguiente:
+</br>
+</br></br>
+</br></br>
 Estas  pueden provenir del API Gateway si lo configuras como Trigger
 de lanzamiento para la función, aunque igual puede ser ejecutado por
 varios otros servicios de amazon.</br>
@@ -284,13 +286,14 @@ el microservicios de lamda.</br>
   <span style = "color:white; font-size: 50px;" class="card-title"><b><TT><u>Semana 5</u></tt><b></span></br>
     <p>
        <CODE style="color:#fafafa; font-size: 18px;">
+         <center><img style="float:right;" class="centrado" src="images/s51.png" ></center>
          Luego de desarrollar la aplicación móvil para dispositivos Android, no en su totalidad.
          se comenzó el desarrollo de la aplicación para dispositivos IOs, para esto se ocupo el lenguaje de
          programación Swift y Xcode como entorno de desarrollo. Se utilizó la documentación oficial y una serie
          de tutoriales para construir la aplicación.</br>
          La aplicación construida consiste únicamente en enviar datos a una base de datos NOSQL,
          esto al momento de presionar un botón, y una serie de validaciones para ello.</br>
-       </br> <center><img class="centrado" src="images/s51.png" ></center></br>
+      </br>
         Al presionar el botón “REGISTRAR AHORA”, se envia una dirección del dispositivo
         como identificador, y los datos de la ubicación, esto es coordenadas latitud y longitud.
         Al legar al servidor, primero comprueba si la dirección del dispositivo corresponde a
@@ -320,9 +323,24 @@ el microservicios de lamda.</br>
         </br><center> <img class="centrado" src="images/s52.png" ></center></br>
         </br><center> <img class="centrado" src="images/s53.png" ></center></br>
         El paso siguiente, es ir a Jenkins y agregar una credencial asociada a la SSH key.</br>
-        </br><center> <img class="centrado" src="images/s54.png" ></center></br>
+
+        <table>
+        <tbody>
+        <tr>
+        <td>
+      </br><center> <img class="centrado" src="images/s54.png" ></center></br>
+        </td>
+        <td>
         </br><center> <img class="centrado" src="images/s55.png" ></center></br>
+        </td>
+        <td>
         </br><center> <img class="centrado" src="images/s56.png" ></center></br>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+
+        </br>
         Finalmente, para asociar un repositorio a una tarea creada en Jenkins, hay que
         dirigirse a configuración de la tarea y hacer lo siguiente:</br>
         </br><center> <img class="centrado" src="images/s57.png" ></center></br>
@@ -345,8 +363,21 @@ el microservicios de lamda.</br>
         La manera que tiene Jenkins de evidenciar el estado actual de un proyecto,
         es por medio de simbolo de colores. El azul significa que todo va bien y rojo que
         se produjo algún error, además la herramientas proporciona un historia de los resultados obtenidos</br>
-        </br><center> <img class="centrado" src="images/s514.png" ></center></br>
-        </br><center> <img class="centrado" src="images/s515.png" ></center></br>
+
+        <table>
+        <tbody>
+        <tr>
+        <td>
+            </br><center> <img class="centrado" src="images/s514.png" ></center></br>
+        </td>
+        <td>
+            </br><center> <img class="centrado" src="images/s515.png" ></center></br>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+
+
       </code>
      </p>
 
@@ -382,9 +413,24 @@ el microservicios de lamda.</br>
          "longitud":"-70.610304"</br>
          };</br>
          Esto simula el botón test que proporciona AWS</br>
-         </br><center> <img class="centrado" src="images/s61.png" ></center></br>
-         </br><center> <img class="centrado" src="images/s62.png" ></center></br>
-         </br><center> <img class="centrado" src="images/s63.png" ></center></br>
+
+         <table>
+          <tbody>
+          <tr>
+          <td>
+              </br><center> <img class="centrado" src="images/s61.png" ></center></br>
+          </td>
+          <td>
+              </br><center> <img class="centrado" src="images/s62.png" ></center></br>
+          </td>
+          <td>
+              </br><center> <img class="centrado" src="images/s63.png" ></center></br>
+          </td>
+          </tr>
+          </tbody>
+          </table>
+
+
          &#8211; Deployment Funciones en lambda.</br>
          Para automatizar el deployment de las funciones de lambda en la nube desde el
          repositorio usamos 2 alternativas, plugins AWS-lambda  y  pipeline de bitbucket.</br></br>
