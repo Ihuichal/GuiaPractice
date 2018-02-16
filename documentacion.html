@@ -368,6 +368,42 @@ el microservicios de lamda.</br>
            </br><center> <img class="centrado" src="images/s61.png" ></center></br>
            </br><center> <img class="centrado" src="images/s62.png" ></center></br>
            </br><center> <img class="centrado" src="images/s63.png" ></center></br>
+           &#8211; Deployment Funciones en lambda.</br>
+           Para automatizar el deployment de las funciones de lambda en la nube desde el
+           repositorio usamos 2 alternativas, plugins AWS-lambda  y  pipeline de bitbucket.</br></br>
+           &#9702; Plugin AWS-lambda para jenkins.</br>
+           Jenkins es nuestro servidor de integración y despliegue continua por defecto.
+           cuenta con varios plugins que nos ayuda a automatizar varios procesos de  desarrollo
+           como el de las pruebas automatizadas, para el caso de Lambda utilizamos un plugins
+           “AWS Lambda Plugin”, que nos ayuda a automatizar el Despliegue de la aplicación.</br>
+           Para utilizar este plugins la mecánica es crear una “tarea”, configurarla para bajar
+           temporalmente la función desde nuestro repositorio de Bitbucket, Darle las credenciales de
+           nuestra cuenta de amazon al servidor Jenkins mediante el plugins, y llenar las configuraciones
+           de nuestra función de lambda. </br>
+           </br><center> <img class="centrado" src="images/s64.png" ></center></br>
+           los campos requeridos para el Deployment </br>
+          &#8226; AWS ACCESS KEY ID : ID que proporciona AWS por medio de las cuentas de usuario.</br>
+          &#8226; AWS Secret Key : Clave secreta del Id Access AWS.</br>
+          &#8226; AWS Region : Region del servidor Aws donde se encuentra función de lambda.</br>
+          &#8226; Funtion name : Nombre de la función a actualizar, si no existe se creará otra con ese nombre. </br>
+          &#8226; Role : a cada función se le asigna un role que cuenta con los permisos para interactuar con los servicios
+          de amazon inclusive los permisos para editar la app </br>
+          &#8226; Artifactact Location : Refiere a la locación donde se encuentra
+          ubicado el proyecto que se quiere subir a producción. hay varias opciones.
+          (enviar un directorio, un zip, o  extraerla de s3 AWS(servicio de almacenamiento de Amazon)
+          en nuestro caso  le dimos la ruta “/Users/Shared/Jenkins/Home/workspace/lambda” que alude a
+          la carpeta donde se baja temporalmente  nuestro repositorio  en cada tarea.</br>
+          &#8226; Handler name : Nombre del controlador de la función en lambda por defecto es Index.handler,
+          depende del nombre del archivo principal que contiene la el método handler  de la función,
+          en nuestro caso es Index.handler porque el archivo principal de llama server.js</br>
+          &#8226; Memory Size:  Se le indica la cantidad de memoria que vamos a requerir para
+          ejecutar este microservicio por defecto son 128 MB. </br>
+          &#8226; Time out: Tiempo de corte para la  ejecución del microservicio.</br>
+          &#8226; Runtime : lenguaje o compilador que ejecutará la función </br>
+          &#8226; Update mode : Se llena con “full por defecto”</br></br>
+          &#9702; PipeLine de Bitbucket </br>
+
+
 
 
 
@@ -379,7 +415,7 @@ el microservicios de lamda.</br>
   </br>
   <div class="card-action">
     <a  target="_blank" href="https://www.npmjs.com/package/lambda-local" style="font-size: 15px; color:#0d47a1;"><u>Lambda local</u></a>
-    <a target="_blank" href="" style="font-size: 15px; color:#0d47a1;"><u>T</u></a>
+    <a target="_blank" href="https://plugins.jenkins.io/aws-lambda" style="font-size: 15px; color:#0d47a1;"><u>Plugin Lambda AWS para Jenkins</u></a>
   </div>
 </div>
 </div>
